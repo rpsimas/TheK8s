@@ -1,0 +1,8 @@
+name: 'deploy jenkins'
+runs:
+  using: "composite"
+  steps: 
+    - run: echo "Before run"
+      shell: pwsh
+    - run: C:\Users\560582\TheK8s_rob\jenkins-remote-build-trigger.sh
+      shell: bash
